@@ -75,6 +75,30 @@ footer {
     padding: 10px;
 }
 
+.article a {
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.article a:hover {
+    color: #61bbd6;
+}
+
+.author {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+}
+
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h3 {
+   margin-top: 7px;
+   margin-bottom: 7px;
+}
+
 
 header h1 {
     color: #fff;
@@ -113,13 +137,13 @@ img {
 
 .last-article {
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .last-article a {
     text-decoration: none;
     color: black;
     transition: all 0.3s ease;
-
 }
 
 .last-article a:hover {
@@ -164,11 +188,11 @@ img {
     font-family: 'Zilla Slab', serif;
     font-size: 13px;
     font-weight: 500;
+    transition: all 0.3s ease;
 }
 
 .primary-navigation a:hover {
     color: #61bbd6;
-    transition: all 0.3s ease;
 }
 
 .primary-navigation a > [aria-hidden="true"] {
@@ -266,7 +290,7 @@ img {
 @media screen and (max-width:500px) {
 
     #main-title {
-        font-size: 16px;
+        font-size: 25px;
     }
 
     .top-choices {
@@ -289,8 +313,8 @@ img {
         padding: 25px;
     }
 
-    .social-icons {
-        width: 105px;
+    .social-header {
+        display: none
     }
 
     .primary-navigation {
@@ -322,9 +346,10 @@ img {
         width: 3rem;
         border: 0;
         aspect-ratio: 1;
-        top: 2rem;
+        top: 0.6rem;
         right: 2rem;
     }
+
 
 }
 

@@ -1,0 +1,88 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+.grid-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.grid-item-horizontal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+}
+
+.image-card {
+    display: flex;
+    flex-flow: column;
+    background-color: #e6f7ff;
+}
+
+.image-card-horizontal {
+    display: flex;
+    flex-flow: row;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #F8F8F8;
+}
+
+.image-card-horizontal img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.card-content {
+    display: flex;
+    flex-flow: column;
+    gap: 8px;
+    padding: 15px;
+}
+
+.card-title {
+    font-family: "myriad-pro", "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    color: #2D77CD;
+    text-transform: uppercase;
+}
+
+.card-author {
+    font-family: "myriad-pro", "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.card-text {
+    font-family: "myriad-pro", "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    text-align: left;
+}
+
+.aside-list {
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+}
+
+.aside-card {
+    display: flex;
+    flex-flow: column;
+    gap: 4px;
+    padding: 10px;
+    border-bottom: 3px solid black;
+}
+
+.aside-title {
+    font-family: "myriad-pro", "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+}

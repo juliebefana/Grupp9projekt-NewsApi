@@ -1,0 +1,108 @@
+
+
+.ux_grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 1fr, 1fr, 1fr;
+	gap:1rem;
+	grid-template-areas: 
+	"one one one one one"
+	"one one one one one"
+	"two two two three three"
+	"four four five five five";
+}
+
+
+
+
+
+
+
+.grid_article {
+    display:flex;
+    flex-flow: column;
+    gap: 8px;
+}
+
+article-img {
+	background-image: url("temp.webp");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
+	height:150px;
+	width:auto;
+	display:flex;
+	flex-direction: column;
+	color:white;
+}
+.article-card-link {
+	color:white;
+}
+.article-card-link:visited  {
+	color: white;
+}
+
+article-img > a:nth-child(1)  {
+	flex-grow: 1;
+}
+article-img > .backdrop  {
+	backdrop-filter: blur(10px);
+	padding:1rem;
+}
+
+.grid_article:nth-child(1) {
+	grid-area: one;
+
+}
+.grid_article:nth-child(1) > .blog-summary  > article-img {
+	background-image: url("https://miro.medium.com/v2/resize:fit:720/format:webp/1*-Vbrt1hZ46XyPCSCvMCITA.jpeg");
+	height:350px;
+}
+
+.grid_article:nth-child(2) {
+	grid-area: two;
+}
+
+.grid_article:nth-child(2) > .blog-summary  > article-img {
+	background-image: url("https://miro.medium.com/v2/resize:fit:720/format:webp/1*K7bDPfwPgstAV279dS4LuA.jpeg");
+	height:100px;
+}
+
+.grid_article:nth-child(3) {
+	grid-area: three;
+}
+
+.grid_article:nth-child(3) > .blog-summary  > article-img {
+	background-image: url("https://miro.medium.com/v2/resize:fit:720/format:webp/1*Zzrn-HKE1FY9dBRvg2NTOQ.jpeg");
+	height:100px;
+}
+
+.grid_article:nth-child(4) {
+	grid-area: four;
+}
+
+.grid_article:nth-child(4) > .blog-summary  > article-img {
+	background-image: url("https://miro.medium.com/v2/resize:fit:720/format:webp/1*qwrN5948UFDYekHFHaClKA.png");
+}
+
+.grid_article:nth-child(5) {
+	grid-area: five;
+}
+
+.grid_article:nth-child(5) > .blog-summary  > article-img {
+	background-image: url("https://miro.medium.com/v2/resize:fit:720/0*2KWCXcoyRbDpi5RJ");
+}
+
+
+@media (min-width: 90em) {
+	.ux_grid {
+		grid-template-areas: 
+		"one one one one two"
+		"one one one one three"
+		"four four five five five";
+	}
+
+	.grid_article:nth-child(1) > .blog-summary  > article-img {
+		height:450px;
+	}
+}

@@ -15,7 +15,6 @@ body {
        "header header header"
        "main main sidebar"
        "footer footer footer";
-
 }
 
 header {
@@ -27,7 +26,6 @@ header {
     height: 90px;
     background-color: #333;
     color: #fff;
-
 }
 
 .main-content {
@@ -98,7 +96,6 @@ h3 {
    margin-top: 7px;
    margin-bottom: 7px;
 }
-
 
 header h1 {
     color: #fff;
@@ -199,7 +196,6 @@ img {
     font-weight: 700;
     margin-inline-end: 0.75rem;
 }
-
 
 
 
@@ -341,7 +337,7 @@ img {
         display: block;
         position: absolute;
         z-index: 9999;
-        background: url('./images/icon1.png');
+        background: url('/images/icon1.png');
         background-repeat: no-repeat;
         width: 3rem;
         border: 0;

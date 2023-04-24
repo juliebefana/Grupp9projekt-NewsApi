@@ -6,40 +6,64 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Quicksand&family=Zilla+Slab&display=swap"
+        rel="stylesheet">
     <title>IT world</title>
+    <script src="nav.js" defer></script>
 </head>
+
 <body>
-    <header>
+    <header class="primary-header flex">
         <h1 id="main-title"><span>IT</span> world</h1>
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="marketing.html">MARKETING</a></li>
-                <li><a href="ux.html">UX/UI DESIGN</a></li>
-                <li><a href="software.html">SOFTWARE</a></li>
-                <li><a href="career.html">CAREER</a></li>
-                <li><a href="development.html">SYSTEM DEVELOPMENT</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="sr-only"></span>
+        </button>
+
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                <li class="active">
+                    <a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html">
+                        <span aria-hidden="true"></span>Home
+                    </a>
+                <li>
+                    <a class="ff-sans-cond uppercase text-white letter-spacing-2" href="#">
+                        <span aria-hidden="true"></span>Marketing
+                    </a>
+                <li>
+                    <a class="ff-sans-cond uppercase text-white letter-spacing-2" href="#">
+                        <span aria-hidden="true"></span>UX/UI Design
+                    </a>
+                <li>
+                    <a class="ff-sans-cond uppercase text-white letter-spacing-2" href="#">
+                        <span aria-hidden="true"></span>Software
+                    </a>   
+                <li>
+                    <a class="ff-sans-cond uppercase text-white letter-spacing-2" href="#">
+                        <span aria-hidden="true"></span>Career
+                    </a> 
+                <li>
+                    <a class="ff-sans-cond uppercase text-white letter-spacing-2" href="#">
+                        <span aria-hidden="true"></span>System development
+                    </a>
+
+                <li>
+                    <a class="ff-sans-cond uppercase text-white letter-spacing-2" href="#">
+                        <span aria-hidden="true"></span>Contact us
+                    </a>    
+
             </ul>
-            <div class="toggle_btn">
-                <i class="fa-solid fa-bars" style="color: #6cd4d5;"></i>
-            </div>
         </nav>
+
         <div class="social-icons">
             <a href="https://www.instagram.com"><img src="./images/insta.png"></a>
             <a href="https://www.facebook.com"><img src="./images/fb.png"></a>
             <a href="https://www.linkedin.com"><img src="./images/linkedin.png"></a>
         </div>
 
-        <div class="dropdown_menu">
-            <li><a href="index.html" class="active">HOME</a></li>
-            <li><a href="marketing.html">MARKETING</a></li>
-            <li><a href="ux.html">UX/UI DESIGN</a></li>
-            <li><a href="software.html">SOFTWARE</a></li>
-            <li><a href="career.html">CAREER</a></li>
-            <li><a href="development.html">SYSTEM DEVELOPMENT</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </div>
     </header>
 
 
@@ -163,22 +187,6 @@
             </div>
         </div>
     </aside>
-
-    <script>
-        const toggleBtn = document.querySelector('.toggle_btn')
-        const toggleBtnIcon = document.querySelector('.toggle_btn i')
-        const dropDownMenu = document.querySelector('.dropdown_menu')
-
-        toggleBtn.onclick = function () {
-            dropDownMenu.classList.toggle('open')
-            const isOpen = dropDownMenu.classList.contains('open')
-
-            toggleBtnIcon.classList = isOpen
-            ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars'
-        }
-
-    </script>
 
     <footer>
         <div class="social-icons">

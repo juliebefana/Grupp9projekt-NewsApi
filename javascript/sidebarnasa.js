@@ -4,7 +4,7 @@ const nasaApiUrl = `https://api.nasa.gov/planetary/apod?api_key=${nasaApiKey}`;
 fetch(nasaApiUrl)
   .then((response) => response.json())
   .then((data) => {
-    let sidebar = document.getElementsByClassName("sidebar");
+    let sidebar = document.getElementsByClassName("latest-news");
 
     let container = document.createElement("div");
     container.className = "nasa-container";

@@ -76,8 +76,41 @@ fetch(url)
       container.appendChild(author);
 
       big[0].appendChild(container);
+
+
     }
+
+    let side = document.getElementsByClassName("latest-news");
+    const news = data.articles.slice(17, 23);
+
+    for (let i = 0; i < news.length; i++) {
+      let con = document.createElement("div");
+      con.className = "last-article";
+
+      let a = document.createElement("a");
+      a.href = news[i].url;
+
+      let h3 = document.createElement("h3");
+      h3.innerText = news[i].title;
+
+      a.appendChild(h3);
+      con.appendChild(a);
+
+      side[0].appendChild(con);
+
+      let hr = document.createElement("hr");
+      hr.style = "width: 100%";
+      side[0].appendChild(hr);
+
+    }
+    console.log(JSON.stringify(data, null, 2));
+
   })
-  .catch((error) => {
-    console.log('Error:', error);
-  });
+
+
+
+
+
+error.catch((error) => {
+  console.log('Error:', error);
+});

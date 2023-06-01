@@ -27,6 +27,8 @@ fetch(nasaApiUrl)
     container.appendChild(description);
 
     sidebar[0].appendChild(container);
+
+
   })
   .catch((error) => {
     console.log('Error:', error);

@@ -80,7 +80,7 @@ fetch(url)
 
     }
 
-    let side = document.getElementsByClassName("latest-news");
+    let side = document.getElementById("top");
     const news = data.articles.slice(17, 23);
 
     for (let i = 0; i < news.length; i++) {
@@ -96,11 +96,11 @@ fetch(url)
       a.appendChild(h3);
       con.appendChild(a);
 
-      side[0].appendChild(con);
+      side.appendChild(con);
 
       let hr = document.createElement("hr");
       hr.style = "width: 100%";
-      side[0].appendChild(hr);
+      side.appendChild(hr);
 
     }
     console.log(JSON.stringify(data, null, 2));

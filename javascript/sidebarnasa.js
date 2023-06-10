@@ -1,4 +1,4 @@
-const nasaApiKey = 'er27Dg4KyJeVlEgy0NbJzlUvgTuDDnrihRNtZYQf';
+const nasaApiKey = 'f7Te5fzkTS347TGN4srgDaHI9d5x8P9fNf3MAIic';
 const nasaApiUrl = `https://api.nasa.gov/planetary/apod?api_key=${nasaApiKey}`;
 
 fetch(nasaApiUrl)

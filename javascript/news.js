@@ -19,7 +19,8 @@ fetch(url)
 
       let h4 = document.createElement("h4");
       h4.className = "published";
-      h4.innerText = articles[i].publishedAt;
+      let date = new Date(articles[i].publishedAt);
+      h4.innerText = date.toLocaleDateString();
 
       box.appendChild(h4);
 
